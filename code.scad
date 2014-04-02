@@ -14,12 +14,25 @@ rotate([0,-30,0]){
 }
 
 
+difference() {
+
+
 //this is the spinning shaft
 translate([-20, 0, 30 ]) {
 	rotate([0,90,0]){
 		cylinder(h=800, r1=20, r2=20);
 	}
+};
+
+//this is the spinning shaft
+translate([-20, 0, 30 ]) {
+	rotate([0,90,0]){
+		cylinder(h=800, r1=15, r2=15);
+	}
+};
+
 }
+
 
 ///this is the coin cell holder
 translate([760,0,0]) {
